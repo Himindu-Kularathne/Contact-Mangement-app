@@ -7,5 +7,6 @@ router.route("/").get(getContacts).post(createContact);
 
 //get specific contact & update contact & delete contact
 router.route("/:id").get(getContact).put(updateContact).delete(deleteContact);
+router.route("/:userid").get(getContacts);
 
 module.exports = router;
